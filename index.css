@@ -6,36 +6,31 @@
    
 }
 
-
-
-
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #080F17; 
     padding: 16px 48px;
+    flex-wrap: wrap;
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 2.9vh;
     color: #D6DDE6; 
     font-weight: bold;
-  }
-  
+  }  
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2.2vw;
   }
   
   .nav-links a {
     text-decoration: none;  /* to remove underlines from a tag links */
     color: #e0e0e0; 
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 2.4vh;
+    transition: all 0.5s ease;
   }
   
   .nav-links a:hover {
@@ -44,7 +39,7 @@
   
   
   nav{
-    border-bottom: 1.5px solid #ffffff;  
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);  
   }
 
 
@@ -56,12 +51,12 @@
   .welcome{
     height: 100%;
 
-    padding: 48px 48px;
+    padding: 4.8vh 5vw;
   }
 
   .welcome p{
     
-    font-size: 11vh;
+    font-size: 9vh;
     width: 100%;
     font-weight: 700;
     line-height: 100px;
@@ -80,9 +75,8 @@
   grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
   justify-content: center; 
-  padding: 0 48px;
-  padding-bottom: 48px;
-  max-width: 1200px; 
+  padding: 0 5vw;
+  padding-bottom: 5vh;
   margin: 0 auto;
 }
 
@@ -95,7 +89,6 @@
 
 .item img {
   width: 100%; 
-  max-width: 300px;
   height: auto; 
   margin: 0 auto; 
 }
@@ -103,18 +96,18 @@
 
 
 .top-para {
-  font-size: 1.2rem;
+  font-size: 2vh;
   font-weight: 600;
   color: rgba(214, 221, 230, 1);
-  margin: 0 3vh; 
+  margin: 0; 
   text-align: start;
 }
 
 .bottom-para {
-  font-size: 1rem;
+  font-size: 1.5vh;
   font-weight: 400;
   color: rgba(214, 221, 230, 0.62); 
-  margin: 0 3vh;
+  margin: 0;
   text-align: start;
 }
 .portfolio-writing{
@@ -127,21 +120,23 @@
 
 .text{
   color: #D6DDE6;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 3vh;
+  line-height: 3.9vh;
+  font-weight: 500;
+  margin-bottom: 5vh;
 
 }
 
 
 .container {
-  margin-top: 10px;
+  margin-top: 1vh;
   position: relative;
   height: 70vh;
   background-image: url(images/pic2.png);
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: end  ;
+  align-items: end;
  
 }
 
@@ -149,27 +144,28 @@
   color: #D6DDE6;
   text-align: left;
  
-  padding: 96px 48px;
+  padding: 6vh 4vw;
   border-radius: 10px;
 }
 
 .content h1 {
-  font-size: 34px;
-  margin-bottom: 20px;
+  font-size: 4vh;
+  margin-bottom: 2vh;
 }
 
 .content p {
-  font-size: 18px;
+  font-size: 2.1vh;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
   line-height: 1.6;
 }
 
 .project-button {
-  font-size: 16px;
+  font-size: 1.7vh;
   padding: 10px 20px;
   background-color: rgba(8, 15, 23, 1);
   color: #D6DDE6;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -179,7 +175,8 @@
 
 
 .project-button:hover {
-  background-color: #e6006f;
+  background-color: #D6DDE6;
+  color: rgba(8, 15, 23, 1);
   transform: scale(1.05);
 }
 
@@ -187,24 +184,25 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   padding: 48px ;
+  gap: 1vh;
 }
 
 .analytics{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 8px;
+  gap: 1vw;
 }
 
 
 .impact-text{
-  font-size: 28px;
+  font-size: 3vh;
   color: #D6DDE6;
   font-weight: bold;
 
 }
 
 .top-text{
-  font-size: 48px;
+  font-size: 4.9vh;
   font-weight: bold;
   margin-bottom: 0px;
   color: #D6DDE6;
@@ -212,112 +210,32 @@
 }
 
 .bottom-text{
-  font-size: 20px;
+  font-size: 2vh;
   font-weight: 500;
   margin-bottom: 0px;
   color: #D6DDE6;
 }
 
-.testimonials {
-  
-  padding: 40px;
-  color: rgba(214, 221, 230, 1);
-  text-align: center; 
-}
 
-.testimonials h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-}
 
-.testimonial-container {
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  gap: 20px; 
-}
-
-.testimonial {
-  
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  width: 250px; 
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-}
-
-.testimonial:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
-}
-
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  float: left;
-  margin-right: 10px;
-}
-
-.testimonial h3 {
-  margin-top: 0; 
-}
-
-.testimonial .title {
-  font-style: italic;
-  color: #aaa;
-  margin-bottom: 10px;
-}
-
-footer{
-  display: flex;
-  justify-content: space-between;
-  padding: 96px 48px 8px 48px;
-
-  
-}
-.footer-text{
-  color: #D6DDE6;
-  opacity: 62%;
-  font-weight: 500;
- 
-}
-
-.contact-button {
-  color: #D6DDE6;
-  border: 1.5px solid rgba(214, 221, 230, 0.2);
-  border-radius: 8px;
-  padding: 8px 16px; 
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: rgba(214, 221, 230, 0.1);
-  transform: scale(1.05); 
-}
 
 .contact-me {
   color: #D6DDE6;
-  padding-top: 200px;
+  padding-top: 20vh;
   text-align: center; 
 }
 
 .contact-me-text {
   text-align: center;
   font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 3vh;
+  margin-bottom: 2vh;
 }
 
 .contact-me-input {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 1.2vw;
 }
 
 .cmi {
@@ -325,7 +243,7 @@ footer{
   color: rgba(255, 255, 255, 0.8); 
   padding: 8px 16px;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 2vh;
   text-align: center;
   
 }
@@ -334,8 +252,8 @@ footer{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 1vh;
+  margin-top: 2vh;
 }
 
 .contact-me-submit button {
@@ -343,7 +261,7 @@ footer{
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1.6vh;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -358,7 +276,7 @@ footer{
   color: rgba(193, 241, 126, 1);
   padding: 10px 20px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1.6vh;
   cursor: pointer;
   transition: transform 0.3s ease-in;
   display: flex;
@@ -371,11 +289,33 @@ footer{
 }
 
 
-
-
-
-
-
-
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 48px 8px 48px;
 
   
+}
+.footer-text{
+  color: #d6dde69e;
+  font-weight: 500;
+ 
+}
+
+
+.contact-button {
+  color: #D6DDE6;
+  border: 1.5px solid rgba(214, 221, 230, 0.2);
+  border-radius: 8px;
+  padding: 8px 16px; 
+  font-size: 1.5vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgba(214, 221, 230, 0.1);
+  transform: scale(1.05); 
+}
+
+
