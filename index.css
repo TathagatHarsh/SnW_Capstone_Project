@@ -49,8 +49,7 @@
   }
 
   .welcome{
-    height: 100%;
-
+    width: 100%;
     padding: 4.8vh 5vw;
   }
 
@@ -59,7 +58,6 @@
     font-size: 9vh;
     width: 100%;
     font-weight: 700;
-    line-height: 100px;
     text-align: center;
     color: #D6DDE6;
     
@@ -73,18 +71,24 @@
 .projects-9 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 24px;
+  gap: 2.4vw;
   justify-content: center; 
   padding: 0 5vw;
   padding-bottom: 5vh;
   margin: 0 auto;
 }
-
+@media (max-width:500px){
+  .projects-9{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .item {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 1vh; 
+  transition: all 0.2s ease-in;
 }
 
 .item img {
@@ -110,6 +114,12 @@
   margin: 0;
   text-align: start;
 }
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 .portfolio-writing{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -193,7 +203,6 @@
   gap: 1vw;
 }
 
-
 .impact-text{
   font-size: 3vh;
   color: #D6DDE6;
@@ -217,10 +226,10 @@
 }
 
 .testimonials h3{
-  font-size: 5vh;
+  font-size: 2rem;
   text-align: center;
   color: rgba(214, 221, 230, 1);
-  margin-bottom: 2vh;
+  margin: 4vh 0 2vh 0;
 
 }
 
@@ -232,6 +241,7 @@
 }
 
 .box {
+
   width: 2rem;
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -370,13 +380,15 @@
 footer{
   display: flex;
   justify-content: space-between;
-  padding: 96px 48px 8px 48px;
+  padding: 9.8vh 4.8vw 0.8vh 4.8vw;
 
   
 }
 .footer-text{
   color: #d6dde69e;
   font-weight: 500;
+  font-size: 1.7vh;
+  margin-bottom: 0;
  
 }
 
@@ -385,7 +397,7 @@ footer{
   color: #D6DDE6;
   border: 1.5px solid rgba(214, 221, 230, 0.2);
   border-radius: 8px;
-  padding: 8px 16px; 
+  padding: 4px 8px; 
   font-size: 1.5vh;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -396,9 +408,55 @@ footer{
   transform: scale(1.05); 
 }
 
-@media screen and (max-width:700px) {
 
+
+  @media (max-width: 500px) {
+    .navbar {
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 16px 24px; 
+    }
   
-}
+    .nav-links {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 16px; 
+      width: 100%; 
+      align-items: flex-start; 
+      
+    }
+  
+    .nav-links.active {
+      display: flex; 
+    }
+    .logo {
+      font-size: 4vh; 
+    }
 
+    .welcome {
+      padding: 3vh 2vw; 
+    }
+  
+    .welcome p {
+      font-size: 4.5vh; 
+    }
+  
+    .welcome img {
+      border-radius: 16px;
+    }
 
+    .impact{
+      display: flex;
+      flex-direction: column;
+    }
+    .analytics{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-me-input{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
