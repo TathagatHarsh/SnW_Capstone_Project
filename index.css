@@ -216,8 +216,86 @@
   color: #D6DDE6;
 }
 
+.testimonials h3{
+  font-size: 5vh;
+  text-align: center;
+  color: rgba(214, 221, 230, 1);
+  margin-bottom: 2vh;
 
+}
 
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  width: 2rem;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  min-width: 250px;
+  background-color: rgba(8, 15, 23, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8vh;
+}
+
+.box:hover {
+  transform: scale(1.07); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+
+.profile img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(214, 221, 230, 1);
+}
+
+.title {
+  font-size: 0.875rem;
+  color: rgba(214, 221, 230, 0.62);
+}
+
+.review {
+  border-left: 1.3px solid rgba(255, 255, 255, 0.5);
+  padding-left: 0.625rem;
+  font-size: 0.875rem;
+  color: rgba(214, 221, 230, 1);
+}
+
+.review-heading {
+  text-align: center;
+}
+
+.line{
+  width: 100%;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.2)
+}
 
 .contact-me {
   color: #D6DDE6;
@@ -316,6 +394,11 @@ footer{
 .contact-button:hover {
   background-color: rgba(214, 221, 230, 0.1);
   transform: scale(1.05); 
+}
+
+@media screen and (max-width:700px) {
+
+  
 }
 
 
