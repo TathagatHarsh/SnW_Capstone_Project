@@ -135,7 +135,6 @@
 
 .container {
   margin-top: 1vh;
-  position: relative;
   height: 70vh;
   background-image: url(images/pic2.png);
   background-size: cover;
